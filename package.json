@@ -6,6 +6,7 @@
     "prepare": "npm update --dev vl-ui-util && npm run prepare:util",
     "prepare:util": "npm explore vl-ui-util -- npm run util",
     "test": "wct -l chrome,firefox --npm",
+    "test:unit:chrome": "wct -p -l chrome --npm",
     "release": "np",
     "release:prepare": "npm run release:prepare:build && npm run release:prepare:imports && npm run release:prepare:css && npm run release:prepare:commit",
     "release:prepare:build": "uglifyjs --compress --mangle --output vl-description-data.js -- *.src.js",
@@ -31,6 +32,8 @@
   },
   "devDependencies": {
     "@govflanders/vl-ui-util": "^3.9.1",
+    "@govflanders/vl-ui-description-data": "^3.9.1",
+    "vl-ui-grid": "^1.1.0",
     "http-server": "0.11.1",
     "np": "3.0.4",
     "uglify-js-es6": "2.8.9",

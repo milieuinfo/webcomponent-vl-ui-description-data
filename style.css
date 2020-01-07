@@ -6187,4 +6187,59 @@ mark,
   }
 }
 
+.vl-description-data__label, .vl-description-data__subdata {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #666;
+}
+@media screen and (max-width: 767px) {
+  .vl-description-data__label, .vl-description-data__subdata {
+    font-size: 1.4rem;
+  }
+}
+.vl-description-data__value, .vl-description-data__data {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333332;
+}
+@media screen and (max-width: 767px) {
+  .vl-description-data__value, .vl-description-data__data {
+    font-size: 1.4rem;
+  }
+}
+.vl-description-data__label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.vl-description-data__icon {
+  position: absolute;
+  font-size: 2.2rem;
+  color: #cbd2da;
+  top: -0.4rem;
+  left: 0;
+}
+@media screen and (max-width: 767px) {
+  .vl-description-data__icon {
+    font-size: 1.8rem;
+    top: -0.2rem;
+  }
+}
+.vl-description-data__icon-wrapper {
+  position: relative;
+  padding: 0 0 0 4rem;
+}
+@media screen and (max-width: 767px) {
+  .vl-description-data__icon-wrapper {
+    padding: 0 0 0 3rem;
+  }
+}
+.vl-description-data--bordered {
+  border: 0.1rem solid #cbd2da;
+  border-width: 0.1rem 0;
+  padding: 1.5rem 0;
+}
+
 /*# sourceMappingURL=style.css.map */

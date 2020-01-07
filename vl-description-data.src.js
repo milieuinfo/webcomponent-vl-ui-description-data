@@ -1,11 +1,11 @@
-import { VlElement, define } from '/node_modules/vl-ui-core/vl-core.js';
+import { NativeVlElement, define } from '/node_modules/vl-ui-core/vl-core.js';
 
 /**
  * VlDescriptionData
  * @class
  * @classdesc 
  * 
- * @extends VlElement
+ * @extends VlNativeElement
  * 
  * @property 
  * 
@@ -14,6 +14,22 @@ import { VlElement, define } from '/node_modules/vl-ui-core/vl-core.js';
  * @see {@link https://webcomponenten.omgeving.vlaanderen.be/demo/vl-description-data.html|Demo}
  * 
  */
-export class VlDescriptionData extends VlElement(HTMLElement) {}
+export class VlDescriptionData extends NativeVlElement(HTMLDivElement) {
+	constructor() {
+		super();
+		this.classList.add('vl-description-data');
+		this.querySelectorAll("[data-vl-label]").forEach(label => {
+			label.classList.add("vl-description-data__label");
+		})
+		this.querySelectorAll("[data-vl-value]").forEach(label => {
+			label.classList.add("vl-description-data__value");
+		})
+	}	
+	
+    get _stylePath() {
+        return '../style.css';
+    }
 
-define('vl-description-data', VlDescriptionData);
+}
+
+define('vl-description-data', VlDescriptionData, {extends: 'div'});
