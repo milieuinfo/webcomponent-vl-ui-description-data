@@ -1,7 +1,7 @@
 {
   "name": "vl-ui-description-data",
   "version": "0.0.0",
-  "description": "Use the description data component to give more information about the content on the page, for example about a contact person, an entity or a publication.",
+  "description": "Gebruik de description data component om meer informatie te geven over de inhoud op de pagina, bvb over een contactpersoon, een entiteit of een publicatie.",
   "scripts": {
     "prepare": "npm update --dev vl-ui-util && npm run prepare:util",
     "prepare:util": "npm explore vl-ui-util -- npm run util",
@@ -27,8 +27,7 @@
   },
   "homepage": "https://github.com/milieuinfo/webcomponent-vl-description-data#readme",
   "dependencies": {
-    "vl-ui-util": "^2.0.5",
-    "vl-ui-core": "^2.0.0"
+    "vl-ui-core": "^3.0.0"
   },
   "devDependencies": {
     "@govflanders/vl-ui-util": "^3.9.1",

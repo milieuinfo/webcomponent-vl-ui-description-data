@@ -34,15 +34,14 @@
       test('Voegt de nodige classes toe op de container.', () => {
         const element = fixture('vl-description-data-fixture');
         assert.isTrue(element.classList.contains("vl-description-data"));
-        expect(element.querySelectorAll("[data-vl-label]").length).to.equal(2);
-        element.querySelectorAll("[data-vl-label]").forEach(label => {
+        expect(element.__labels.length).to.equal(2);
+        element.__labels.forEach(label => {
 	        assert.isTrue(label.classList.contains("vl-description-data__label"));
         });
-        expect(element.querySelectorAll("[data-vl-value]").length).to.equal(2);
-        element.querySelectorAll("[data-vl-vaue]").forEach(label => {
+        expect(element.__values.length).to.equal(2);
+        element.__values.forEach(label => {
 	        assert.isTrue(label.classList.contains("vl-description-data__value"));
         });
-		debugger;
       });
     });
   </script>
