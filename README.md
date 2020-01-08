@@ -1,7 +1,7 @@
 # vl-description-data
 ![GitHub issues](https://img.shields.io/github/issues-raw/milieuinfo/webcomponent-vl-ui-description-data) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/milieuinfo/webcomponent-vl-ui-description-data) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/milieuinfo/webcomponent-vl-ui-description-data)
 
-Use the description data component to give more information about the content on the page, for example about a contact person, an entity or a publication.
+Gebruik de description data component om meer informatie te geven over de inhoud op de pagina, bvb over een contactpersoon, een entiteit of een publicatie.
 
 ## Installatie
 ```
