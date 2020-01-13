@@ -3,8 +3,9 @@ const { Page } = require('vl-ui-core');
 const { Config } = require('vl-ui-core');
 
 class VlDescriptionDataPage extends Page {
-    async _getDescriptionData(selector) {
-        return new VlDescriptionData(this.driver, selector);
+    
+    async getVlDescriptionData() {
+    	return new VlDescriptionData(this.driver, "[is='vl-description-data']");
     }
 
     async load() {
@@ -12,4 +13,8 @@ class VlDescriptionDataPage extends Page {
     }
 }
 
-module.exports = VlDescriptionData;
+function sleep(ms) {
+	  return new Promise(resolve => setTimeout(resolve, ms));
+	}
+
+module.exports = VlDescriptionDataPage;
