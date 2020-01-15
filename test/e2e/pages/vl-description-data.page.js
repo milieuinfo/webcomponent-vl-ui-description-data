@@ -1,10 +1,9 @@
 const VlDescriptionData = require('../components/vl-description-data');
-const { Page } = require('vl-ui-core');
-const { Config } = require('vl-ui-core');
+const { Page, Config } = require('vl-ui-core');
 
 class VlDescriptionDataPage extends Page {
-    async _getDescriptionData(selector) {
-        return new VlDescriptionData(this.driver, selector);
+    async getVlDescriptionData() {
+    	return new VlDescriptionData(this.driver, "#vl-description-data");
     }
 
     async load() {
@@ -12,4 +11,4 @@ class VlDescriptionDataPage extends Page {
     }
 }
 
-module.exports = VlDescriptionData;
+module.exports = VlDescriptionDataPage;
