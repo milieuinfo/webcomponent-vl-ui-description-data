@@ -9,24 +9,22 @@ describe('vl-description-data', async () => {
         return vlDescriptionDataPage.load();
     });
     
-
     it('de value en label van elke description data block worden correct getoond', async () => {
-    	const vlDescriptionData = await vlDescriptionDataPage.getVlDescriptionData();
-    	
-    	const aantalVlDescriptionDataBlocks = await vlDescriptionData.getAantalVlDescriptionDataBlocks();
-    	assert.equal(aantalVlDescriptionDataBlocks, 4);
-    	
-    	const firstBlock = await vlDescriptionData.getVlDescriptionDataBlock(0);
-        assertDescriptionDataBlock(firstBlock, "Uitgever", "Kind en Gezin");
+    	const descriptionData = await vlDescriptionDataPage.getVlDescriptionData();
+        
+        const descriptionDatablocks = await descriptionData.getDescriptionDataBlocks();
+        assert.lengthOf(descriptionDatablocks, 4);
 
-        const secondBlock = await vlDescriptionData.getVlDescriptionDataBlock(1);
-        assertDescriptionDataBlock(firstBlock, "Publicatiedatum", "Augustus 2018");
+        await assert.eventually.equal(descriptionDatablocks[0].getLabel(), "Uitgever");
+        await assert.eventually.equal(descriptionDatablocks[0].getValue(), "Kind en Gezin");
+
+        await assert.eventually.equal(descriptionDatablocks[1].getLabel(), "Publicatiedatum");
+        await assert.eventually.equal(descriptionDatablocks[1].getValue(), "Augustus 2018");
+
+        await assert.eventually.equal(descriptionDatablocks[2].getLabel(), "Publicatietype");
+        await assert.eventually.equal(descriptionDatablocks[2].getValue(), "Brochure");
+
+        await assert.eventually.equal(descriptionDatablocks[3].getLabel(), "Categorie");
+        await assert.eventually.equal(descriptionDatablocks[3].getValue(), "Kinderen en jongeren");
     });
-
-    async function assertDescriptionDataBlock(descriptionDataBlock, expectedLabel, expectedValue) {
-    	const label = await descriptionDataBlock.getLabel();
-    	assert.isTrue(await label.getText() == expectedLabel);
-    	const value = await descriptionDataBlock.getValue();
-    	assert.isTrue(await value.getText() == expectedValue);
-    }
 });
