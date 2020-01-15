@@ -42,10 +42,10 @@
     "vl-ui-core": "^3.0.0"
   },
   "devDependencies": {
-    "@govflanders/vl-ui-util": "^3.9.1",
     "@govflanders/vl-ui-description-data": "^3.9.1",
+    "@govflanders/vl-ui-util": "^3.9.1",
     "vl-ui-grid": "^1.1.0",
-    "vl-ui-util": "^3.0.0"
+    "vl-ui-util": "^3.3.0"
   },
   "publishConfig": {
     "registry": "http://artifactory-pr-build.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/"
