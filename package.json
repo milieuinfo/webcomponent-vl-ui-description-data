@@ -1,6 +1,9 @@
 {
   "name": "vl-ui-description-data",
   "version": "1.0.1",
+  "description": "Gebruik de description data component om meer informatie te geven over de inhoud op de pagina, bvb over een contactpersoon, een entiteit of een publicatie.",
+  "author": "DIDM",
+  "license": "MIT",
   "main": "./src/index.js",
   "exports": {
     "require": "./index.js",
@@ -8,7 +11,17 @@
     "node": "./index.js",
     "default": "./index.js"
   },
-  "description": "Gebruik de description data component om meer informatie te geven over de inhoud op de pagina, bvb over een contactpersoon, een entiteit of een publicatie.",
+  "homepage": "https://github.com/milieuinfo/webcomponent-vl-ui-description-data#readme",
+  "bugs": {
+    "url": "https://github.com/milieuinfo/webcomponent-vl-ui-description-data/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milieuinfo/webcomponent-vl-ui-description-data.git"
+  },
+  "publishConfig": {
+    "registry": "http://artifactory-pr-build.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/"
+  },
   "scripts": {
     "prepare": "npm update --dev vl-ui-util && npm run prepare:util",
     "prepare:util": "npm explore vl-ui-util -- npm run util",
@@ -45,17 +58,10 @@
     "release:testless": "np --yolo",
     "demo": "http-server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/milieuinfo/webcomponent-vl-ui-description-data.git"
-  },
-  "author": "DIDM",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/milieuinfo/webcomponent-vl-ui-description-data/issues"
-  },
-  "homepage": "https://github.com/milieuinfo/webcomponent-vl-ui-description-data#readme",
   "dependencies": {
+    "vl-ui-core": "^4.0.0"
+  },
+  "peerDependencies": {
     "vl-ui-core": "^4.0.0"
   },
   "devDependencies": {
@@ -63,8 +69,5 @@
     "@govflanders/vl-ui-util": "^3.9.1",
     "vl-ui-grid": "^1.1.1",
     "vl-ui-util": "^4.0.1"
-  },
-  "publishConfig": {
-    "registry": "http://artifactory-pr-build.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/"
   }
 }
