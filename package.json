@@ -61,7 +61,7 @@
   "devDependencies": {
     "@govflanders/vl-ui-description-data": "^3.9.1",
     "@govflanders/vl-ui-util": "^3.9.1",
-    "vl-ui-grid": "^1.1.1",
+    "vl-ui-grid": "^2.0.0",
     "vl-ui-util": "^4.0.1"
   },
   "publishConfig": {
