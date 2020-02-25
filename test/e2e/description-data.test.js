@@ -28,7 +28,4 @@ describe('vl-description-data', async () => {
         await assert.eventually.equal(descriptionDatablocks[3].getValue(), "Kinderen en jongeren");
     });
 
-    after(async () => {
-        return driver.quit();
-    })
 });
