@@ -23,7 +23,7 @@ class VlDescriptionData extends VlElement {
 	async getDescriptionDataBlocks() {
 		const elementen = await this.findElements(By.css(".vl-description-data-block"));
 		return Promise.all(elementen.map(async element => {
-			return await new VlDescriptionDataBlock(this.driver, element);
+			return new VlDescriptionDataBlock(this.driver, element);
 		}));
 	}
 

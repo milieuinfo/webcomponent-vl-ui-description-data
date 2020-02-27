@@ -1,4 +1,3 @@
-
 const { assert, driver } = require('vl-ui-core').Test.Setup;
 const VlDescriptionDataPage = require('./pages/vl-description-data.page');
 
@@ -27,5 +26,4 @@ describe('vl-description-data', async () => {
         await assert.eventually.equal(descriptionDatablocks[3].getLabel(), "Categorie");
         await assert.eventually.equal(descriptionDatablocks[3].getValue(), "Kinderen en jongeren");
     });
-
 });
