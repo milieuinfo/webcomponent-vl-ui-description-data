@@ -3,15 +3,19 @@
 
 <head>
 	<title>vl-description-data voorbeeld</title>
-	<script type="module" src="/node_modules/vl-ui-demo/dist/vl-demo-all.js"></script>
-	
-	<script type="module" src="/src/vl-description-data.js"></script>
-	<script type="module" src="/node_modules/vl-ui-grid/dist/vl-grid.js"></script>
+	<script type="module">
+		import '/node_modules/vl-ui-demo/dist/vl-demo.js';
+		import '/node_modules/vl-ui-demo/dist/vl-demo-page.js';
+		import '/node_modules/vl-ui-body/dist/vl-body.js';
+		import '/node_modules/vl-ui-grid/dist/vl-grid.js';
+		import '/src/vl-description-data.js';
+	</script>
 
 	<link rel="stylesheet" type="text/css" href="/src/style.css" />
+	<link rel="stylesheet" type="text/css" href="/node_modules/vl-ui-body/dist/style.css" />
 </head>
 
-<body>
+<body is="vl-body">
 	<vl-demo-page data-vl-webcomponent="vl-description-data" data-vl-link="https://overheid.vlaanderen.be/webuniversum/v3/documentation/components/vl-ui-description-data">
 		<vl-demo data-vl-title="Description data">
 			<div is="vl-description-data" id="vl-description-data">

@@ -14,8 +14,7 @@ import {nativeVlElement, define} from 'vl-ui-core';
  *
  */
 export class VlDescriptionData extends nativeVlElement(HTMLDivElement) {
-  constructor() {
-    super();
+  connectedCallback() {
     this.classList.add('vl-description-data');
     this.__labels.forEach((label) => {
       label.classList.add('vl-description-data__label');
