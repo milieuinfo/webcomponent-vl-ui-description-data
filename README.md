@@ -9,7 +9,7 @@ $ npm install --save vl-ui-description-data
 ```
 
 ## API
-De [API](https://webcomponenten.omgeving.vlaanderen.be/doc/VlDescriptionData.html) bevat een overzicht van de ondersteunde attributen en een beschrijving van de beschikbare functies.
+De [API](https://webcomponenten.omgeving.vlaanderen.be/doc/VlDescription-data.html) bevat een overzicht van de ondersteunde attributen en een beschrijving van de beschikbare functies.
 
 ## Demo
 De [demo](https://webcomponenten.omgeving.vlaanderen.be/demo/vl-description-data.html) pagina bevat een overzicht van de mogelijkheden met code voorbeelden. Lokaal opstarten kan met onderstaand [NPM](https://www.npmjs.com) script.
