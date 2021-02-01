@@ -1,3 +1,1 @@
-module.exports = {
-  VlDescriptionData: require('../dist/vl-description-data.src.js').VlDescriptionData,
-};
+export * from '../dist/vl-description-data.src.js';
